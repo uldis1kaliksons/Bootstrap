@@ -16,12 +16,32 @@
 
 <body>
     <div class="container my-4">
-        <h1 class="d-flex justify-content-center">Anketa</h1>
+        <h1 class="d-flex justify-content-center">Forma</h1>
         <form class="row g-3" id="survey">
           <div class="row border p-3 my-3">
             <label class="form-label" for="name">Vārds</label>
             <input type="text" class="form-control" id="name" placeholder="Vārds" required>
             <label for="exampleInputEmail1" class="form-label">Email address</label required>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@email.com">
+            
     </div>
+    <div class="row border p-3 my-3">
+        <label for="ice cream">Izvēlies saldējuma garšu</label>
+          <select id="ice cream" class="form-control" required>
+            <option value="" disabled selected>saldējuma garša</option>
+            <option>šokolādes</option>
+            <option>vaniļas</option>
+    </div>
+
+    <div class="row border p-3 my-3">
+        <label for="stores">Pieejamie veikali</label>
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Rimi, Dzirciema iela</label>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary d-flex justify-content-center" onclick="validateForm()">Submit</button>
+      </div>
+
 </body>
 </html>
